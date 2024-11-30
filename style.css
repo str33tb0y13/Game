@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.category-buttons, .language-toggle {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#feedback {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#score, #remaining-words {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#start-btn {
+    padding: 10px;
+    font-size: 16px;
+}
+/* Light Mode */
+body {
+    background-color: white;
+    color: black; /* Default text color */
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: rgb(0, 0, 0); /* Text color for dark mode */
+}
+
+body.dark-mode h1, /* Targeting the specific text element for dark mode */
+body.dark-mode h2, /* If you have headers like h1, h2, etc., you can target them here */
+body.dark-mode p { /* Target paragraphs or other text elements */
+    color: rgb(0, 0, 0); /* Ensure text color is white in dark mode */
+}
+
+button.dark-mode-btn {
+    background-color: #555;
+}
+
+button.dark-mode-btn:hover {
+    background-color: #666;
+}

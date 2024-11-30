@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Language Learning Game</h1>
+
+        <!-- Category Buttons -->
+        <div class="category-buttons">
+            <button class="category-btn" data-category="lektion1">Lecktion 1</button>
+            <button class="category-btn" data-category="lektion2">Lecktion 2</button>
+            <button class="category-btn" data-category="lektion3">Lecktion 3</button>
+            <button class="category-btn" data-category="lektion4">Lecktion 4</button>
+            <button class="category-btn" data-category="lektion5">Lecktion 5</button>
+            <button class="category-btn" data-category="lektion6">Lecktion 6</button>
+            <button class="category-btn" data-category="lektion7">Lecktion 7</button>
+            <button class="category-btn" data-category="lektion8">Lecktion 8</button>
+            <button class="category-btn" data-category="lektion9">Lecktion 9</button>
+            <button class="category-btn" data-category="lektion10">Lecktion 10</button>
+        </div>
+
+        <!-- Language Toggle Buttons -->
+        <div class="language-toggle">
+            <button id="bg-to-de-btn">Bulgarian → German</button>
+            <button id="de-to-bg-btn" disabled>German → Bulgarian</button>
+        </div>
+
+        <!-- Word and Input Fields -->
+        <div id="word-display">Press 'Start' to begin!</div>
+        <input type="text" id="user-input" disabled placeholder="Type your translation here...">
+        <button id="submit-btn" disabled>Submit Answer</button>
+
+        <!-- Feedback and Score -->
+        <div id="feedback"></div>
+        <div id="score">Score: 0</div>
+        <div id="remaining-words">Remaining words: 0</div>
+
+        <!-- Start Button -->
+        <button id="start-btn">Start</button>
+        <button id="mode-toggle-btn">Switch to Dark Mode</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
